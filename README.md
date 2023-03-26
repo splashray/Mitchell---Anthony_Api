@@ -1,7 +1,7 @@
 # Mitchell---Anthony_Api
 
 Auth  <br> 
-Applications  <br>
+Application Form  <br>
 Users  <br>
 Chatbot  <br>
 Newsletter  <br>
