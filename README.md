@@ -1,9 +1,9 @@
 # Mitchell---Anthony_Api
 
-Auth 
-Applications
-Users
-Chatbot
-Newsletter
-Blog 
-Schools list
+Auth  <br> 
+Applications  <br>
+Users  <br>
+Chatbot  <br>
+Newsletter  <br>
+Blog   <br>
+Schools list  <br>
