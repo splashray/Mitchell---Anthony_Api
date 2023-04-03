@@ -7,17 +7,22 @@ const config = {
 
   PORT: process.env.PORT,
 
-  googleClientId: process.env.googleClientId,
+  JWT_SECRET: process.env.jwtSecret,
 
-  googleClientSecret: process.env.googleClientSecret,
+  REFRESH_TOKEN: process.env.jwtRefreshSecret,
 
-  jwtSecret: process.env.jwtSecret,
+  BASE_URL: process.env.base_url,
 
-  jwtRefreshSecret: process.env.jwtRefreshSecret,
+  GOOGLE_CLIENTID: process.env.googleClientId,
 
-  aws_access_key_id:  process.env.aws_access_key_id,
+  GOOGLE_CLIENT_SECRET: process.env.googleClientSecret,
 
-  secretAccessKey: process.env.secretAccessKey
+  // aws_access_key_id:  process.env.aws_access_key_id,
+
+  // secretAccessKey: process.env.secretAccessKey
+  
+  // sendGridApiKey: process.env.sendGridApiKey
+  
 }
 
 module.exports = config

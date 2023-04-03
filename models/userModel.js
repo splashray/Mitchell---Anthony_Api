@@ -11,25 +11,31 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true
   },
-  password: {
-    type: String,
-    required: true
+  authenticationType: {
+    form: {
+      password: String
+    },
+    google: {
+      uuid: String
+    }
   }, 
    roles: {
     type: String,
-    enum: ['User', 'Admin'],
-    default: 'User',
+    enum: ['user', 'admin'],
+    default: 'user',
   },
   isVerified: {
     type: Boolean,
     default: false
   },
-  accessToken: {
-    type: String,
+  newsletterSub:{
+    type: Boolean,
+    default: false
   },
   refreshToken: {
     type: String,
   }
+
 });
 
 const User = mongoose.model('User', userSchema);

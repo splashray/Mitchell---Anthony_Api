@@ -6,13 +6,13 @@ const cors = require("cors");
 //import custom middleware
 const config = require("./utils/config");
 const connectDB = require("./database/dbConn");
-const notFound = require("./middlewares/not-found");
+const notFound = require("./middleware/not-found");
 
 //import custom router
-const authRouter = require('./routers/authRouter');
-const userRouter = require('./routers/userRouter');
-const newsletterRouter = require('./routers/newsletterRouter');
-const applicationRouter = require('./routers/applicationRouter');
+const authRouter = require('./routes/authRouter');
+const userRouter = require('./routes/userRouter');
+const newsletterRouter = require('./routes/newsletterRouter');
+const applicationRouter = require('./routes/applicationRouter');
 
 const app = express();
 
@@ -29,10 +29,10 @@ app.get("/", (req, res) => {
   res.send("Welcome to mitchell_anthony api");
 });
 
-app.use('/auth', authRouter);
-app.use('/users', userRouter);
-app.use('/newsletter', newsletterRouter);
-app.use('/application', applicationRouter);
+app.use('/api/auth', authRouter);
+app.use('/api/users', userRouter);
+app.use('/api/newsletter', newsletterRouter);
+app.use('/api/application', applicationRouter);
 
 app.use(notFound);
 
