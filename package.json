@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "test": "jest --watch"
   },
   "author": "John Alafiatayo",
   "license": "ISC",
@@ -22,11 +23,15 @@
     "joi": "^17.9.1",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.0.3",
-    "nodemon": "^2.0.22",
     "uuid": "^9.0.0"
   },
   "engine": {
     "node": "14.x",
     "npm": "6.9.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3"
   }
 }

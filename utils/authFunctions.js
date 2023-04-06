@@ -1,5 +1,4 @@
 const { google } = require("googleapis");
-const { OAuth2Client } = require("google-auth-library");
 
 const User = require("../models/userModel");
 const config = require("./config");
